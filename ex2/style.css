@@ -62,7 +62,7 @@ body:hover .box1 {
     transform: translateX(0);
 }
 
-@media screen and (max-width: 1080px;) {
+@media screen and (max-width: 1080px) {
     .box2 {
         left: 1080px;
     }
