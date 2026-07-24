@@ -1,3 +1,11 @@
 :root {
+    /* 배경 컬러 */
     --color-background-tertiary: #faf9f5;
+    /* 메인 컬러 */
+    --color-background-dark-info: #253E5F;
+    --color-background-danger: #B53333;
+    --color-background-dark-success: #1B4614; 
+    /* 서브 컬러 */
+    --color-background-info: #D6E4F6;
+    --color-background-success: #E9F1DC;
 }
