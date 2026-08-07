@@ -1,13 +1,10 @@
 :root {
-    /* 배경 컬러 */
     --color-background-tertiary: #faf9f5;
-    /* 메인 컬러 */
-    --color-background-dark-info: #253E5F;
     --color-background-danger: #B53333;
-    --color-background-dark-success: #1B4614; 
-    /* 서브 컬러 */
-    --color-background-info: #D6E4F6;
-    --color-background-success: #E9F1DC;
+    --color-background-dark-info:#253E5F;
+    --color-background-danger2:#DD5353;
+    --color-background-warning:#F6EEDF;
+    --color-background-success:#E9F1DC;
 
     --font-text-size10: 10px;
     --font-text-size12: 12px;
@@ -18,6 +15,7 @@
     --font-text-size22: 22px;
     --font-text-size24: 24px;
     --font-text-size26: 26px;
+    --font-text-size40: 40px;
 
     /* --font-text-sz-rem: 1rem;
     --font-text-sz-rem: 1.1rem;
@@ -59,12 +57,16 @@
   --text-small: var(--font-text-size18);
   --text-medium: var(--font-text-size20);
   --text-large: var(--font-text-size26);
+  /* 지역 글자 사이즈 */
+  --text-logo: var(--font-text-size40);
 
   /* 글자 두께 */
   --textW-XS: var(--font-weight300);
   --textW-small: var(--font-weight500);
-  --textW-medium: var(--font-weight500);
+  --textW-medium: var(--font-weight600);
   --textW-large: var(--font-weight700);
+  /* 지역 글자 두께 */
+  --textW-logo: var(--font-weight900);
 
   /* 글자 색상 */
   --color-default-light: var(--color-Wh);
@@ -81,14 +83,15 @@
 }
 
 
-/* ------ 전역 ------- */
-/* 전체 브라우저에 들어가는 기본 글자 색상  */
+/* ------ 전역 ------ */
+/* 전체 브라우저에 들어가는 기본 글자 색상 */
 .col-de-light {
   color: var(--color-default-light);
 }
 .col-de-dark {
   color: var(--color-default-dark);
 }
+
 /* 전체 브라우저에 들어가는 XS글자 */
 .XS-text-cpn {
   font-size: var(--text-XS);
@@ -104,8 +107,8 @@
 }
 
 
-/* ------ 버튼 ------ */
-/* ---- 전역 버튼 ---- */
+/* ------버튼------ */
+/* ----전역 버튼---- */
 .btn-XS-color {
   padding: var(--padding-XS);
   background-color: var(--main);
@@ -123,11 +126,13 @@
   border: 1px solid var(--main);
 }
 
-/* ---- 지역 버튼 ---- */
+
+/* ----지역 버튼---- */
 
 
-/* ------ 아이콘 ------ */
-/* ---- 전역 아이콘 ---- */
+
+/* ------아이콘------ */
+/* ----전역 아이콘---- */
 .icon-FS-XS {
   font-size: var(--icon-FS-XS);
   font-weight: var(--icon-W-XS);
@@ -137,15 +142,27 @@
   font-weight: var(--icon-W-small);
 }
 
-/* ---- 지역 아이콘 ---- */
+/* ----지역 아이콘---- */
 .circle-icon-XS {
   font-size: var(--icon-FS-small);
   font-weight: var(--icon-W-XS);
 }
 
 
-/* ------ 이벤트(활성화/비활성화) ------ */
-/* ---- header ---- */
+/* ------일반 컴포넌트------ */
+/* ----전역---- */
+button {cursor: pointer;}
+/* ----header---- */
+.logo {
+    font-size: var(--text-logo);
+    font-weight: var(--textW-logo);
+    color: var(--main);
+    letter-spacing: -4%;
+}
+
+
+/* ------이벤트(활성화/비활성화)------ */
+/* ----header---- */
 .li {
   position: relative;
   /* 임의 코드(실제 적용시 삭제) */
